@@ -11,7 +11,7 @@ function CartContainer({ cart = [], totalAmount, dispatch }) {
 
   return (
     <section className="cart">
-      <header>
+      <header className="">
         <h2>your bag</h2>
       </header>
 
@@ -19,19 +19,22 @@ function CartContainer({ cart = [], totalAmount, dispatch }) {
         <h4 className="empty-cart">is currently empty</h4>
       ) : (
         <>
-          <div>
+          <div className="">
             {cart.map((item) => {
               return <CartItem key={item.id} {...item} />;
             })}
           </div>
 
-          <footer>
+          <footer className="">
             <hr />
+
             <div className="cart-total">
-              <h4>
-                total <span>${parseFloat(totalAmount.toFixed(2))}</span>
+              <h4 className="">
+                <span className="">total</span>
+                <span>${parseFloat(totalAmount.toFixed(2))}</span>
               </h4>
             </div>
+
             <button
               onClick={() => dispatch({ type: CLEAR_CART })}
               className="btn clear-btn"
