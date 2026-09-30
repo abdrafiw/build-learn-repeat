@@ -10,8 +10,8 @@ function RootElement() {
         <Link to="/about">About</Link>
       </nav>
 
-      <main>
-        <Suspense fallback={<p>Loading...</p>}>
+      <main className="">
+        <Suspense fallback={<p>Loading content...</p>}>
           <Outlet />
         </Suspense>
       </main>
