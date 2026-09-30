@@ -11,10 +11,9 @@ type FormValues = {
 function YouTubeForm() {
   const form = useForm<FormValues>({
     defaultValues: {
-      username: "kulkan",
+      username: "",
       email: "",
-      channel: "web dev simplified",
-      age: 23,
+      channel: "",
     },
   });
 
@@ -25,13 +24,9 @@ function YouTubeForm() {
     formState: { errors },
   } = form;
 
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
-  };
+  const onSubmit = (data: FormValues) => console.log(data);
 
-  const onError = (error: FieldErrors<FormValues>) => {
-    console.log(error);
-  };
+  const onError = (error: FieldErrors<FormValues>) => console.log(error);
 
   return (
     <>
