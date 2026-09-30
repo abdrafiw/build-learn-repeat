@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" role="img" aria-labelledby="title desc">
+  <title id="title">Google Pixel</title>
+  <desc id="desc">A white smartphone with a coral and blue screen.</desc>
+  <rect width="160" height="200" fill="none"/>
+  <rect x="41" y="10" width="78" height="180" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+  <rect x="48" y="28" width="64" height="136" rx="5" fill="#2563eb"/>
+  <circle cx="80" cy="176" r="5" fill="#cbd5e1"/>
+  <circle cx="80" cy="20" r="2.5" fill="#94a3b8"/>
+  <path d="M48 111c18-22 38-23 64-2v55H48z" fill="#fb7185" opacity=".9"/>
+  <path d="M48 69c20 10 43 9 64-6v48c-21 13-43 12-64 0z" fill="#7dd3fc" opacity=".85"/>
+</svg>

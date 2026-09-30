@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" role="img" aria-labelledby="title desc">
+  <title id="title">Samsung Galaxy S7</title>
+  <desc id="desc">A black smartphone with a teal screen.</desc>
+  <rect width="160" height="200" fill="none"/>
+  <rect x="39" y="12" width="82" height="176" rx="14" fill="#1f2937"/>
+  <rect x="45" y="25" width="70" height="140" rx="4" fill="#38bdf8"/>
+  <circle cx="80" cy="176" r="6" fill="#111827"/>
+  <rect x="66" y="18" width="28" height="3" rx="1.5" fill="#6b7280"/>
+  <path d="M45 122 77 84l18 21 20-25v85H45z" fill="#0f766e" opacity=".45"/>
+</svg>

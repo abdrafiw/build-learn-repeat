@@ -1,5 +1,5 @@
-import cartItems from "./cart-items";
-import { createStore } from "redux";
+import cartItems from "./cart-items.json";
+import { legacy_createStore as createStore } from "redux";
 import { reducer } from "./reducer";
 
 const initialState = {

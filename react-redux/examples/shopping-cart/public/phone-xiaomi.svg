@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" role="img" aria-labelledby="title desc">
+  <title id="title">Xiaomi Redmi Note 2</title>
+  <desc id="desc">A dark gray smartphone with a warm yellow screen.</desc>
+  <rect width="160" height="200" fill="none"/>
+  <rect x="37" y="8" width="86" height="184" rx="12" fill="#374151"/>
+  <rect x="44" y="24" width="72" height="142" rx="3" fill="#facc15"/>
+  <circle cx="80" cy="177" r="6" fill="#111827"/>
+  <rect x="68" y="16" width="24" height="3" rx="1.5" fill="#9ca3af"/>
+  <path d="M44 108 70 78l22 26 24-34v96H44z" fill="#ea580c" opacity=".55"/>
+  <circle cx="98" cy="50" r="10" fill="#fde68a" opacity=".9"/>
+</svg>

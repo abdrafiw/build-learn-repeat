@@ -1,7 +1,7 @@
-import { REMOVE, TOGGLE_AMOUNT } from "../actions";
+import { REMOVE, TOGGLE_QUANTITY } from "../actions";
 import { connect } from "react-redux";
 
-function CartItem({ img, title, price, amount, remove, toggle }) {
+function CartItem({ img, title, price, quantity, remove, toggle }) {
   return (
     <div className="cart-item">
       <img src={img} alt={title} />
@@ -15,17 +15,17 @@ function CartItem({ img, title, price, amount, remove, toggle }) {
       </div>
 
       <div>
-        <button onClick={() => toggle("inc")} className="amount-btn">
+        <button onClick={() => toggle("inc")} className="quantity-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
             <path d="M10.707 7.05L10 6.343 4.343 12l1.414 1.414L10 9.172l4.243 4.242L15.657 12z" />
           </svg>
         </button>
 
-        <p className="amount">{amount}</p>
+        <p className="quantity">{quantity}</p>
 
         <button
-          onClick={() => (amount == 1 ? remove() : toggle("dec"))}
-          className="amount-btn"
+          onClick={() => (quantity == 1 ? remove() : toggle("dec"))}
+          className="quantity-btn"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
@@ -41,7 +41,8 @@ function mapDispatchToProps(dispatch, ownProps) {
 
   return {
     remove: () => dispatch({ type: REMOVE, payload: { id } }),
-    toggle: (type) => dispatch({ type: TOGGLE_AMOUNT, payload: { id, type } }),
+    toggle: (type) =>
+      dispatch({ type: TOGGLE_QUANTITY, payload: { id, type } }),
   };
 }
 

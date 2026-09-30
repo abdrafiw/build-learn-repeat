@@ -1,4 +1,4 @@
-import { CLEAR_CART, REMOVE, TOGGLE_AMOUNT, GET_TOTALS } from "./actions";
+import { CLEAR_CART, REMOVE, TOGGLE_QUANTITY, GET_TOTALS } from "./actions";
 
 export function reducer(state, action) {
   if (action.type === CLEAR_CART) {
@@ -12,13 +12,13 @@ export function reducer(state, action) {
     };
   }
 
-  if (action.type === TOGGLE_AMOUNT) {
+  if (action.type === TOGGLE_QUANTITY) {
     const newCart = state.cart.map((cartItem) => {
       if (cartItem.id === action.payload.id) {
         if (action.payload.type === "inc") {
-          return { ...cartItem, amount: cartItem.amount + 1 };
+          return { ...cartItem, quantity: cartItem.quantity + 1 };
         } else {
-          return { ...cartItem, amount: cartItem.amount - 1 };
+          return { ...cartItem, quantity: cartItem.quantity - 1 };
         }
       }
 
@@ -30,9 +30,9 @@ export function reducer(state, action) {
   if (action.type === GET_TOTALS) {
     const { totalAmount, totalItems } = state.cart.reduce(
       (cartTotal, cartItem) => {
-        const { price, amount } = cartItem;
-        cartTotal.totalItems += amount;
-        cartTotal.totalAmount = cartTotal.totalItems * price;
+        const { price, quantity } = cartItem;
+        cartTotal.totalItems += quantity;
+        cartTotal.totalAmount += price * quantity;
 
         return cartTotal;
       },
@@ -40,7 +40,7 @@ export function reducer(state, action) {
       {
         totalAmount: 0,
         totalItems: 0,
-      }
+      },
     );
 
     return { ...state, totalAmount, totalItems };

@@ -145,7 +145,7 @@ nav svg {
   width: 2rem;
   fill: var(--clr-white);
 }
-.amount-container {
+.quantity-container {
   position: absolute;
   top: -0.75rem;
   right: -0.75rem;
@@ -157,7 +157,7 @@ nav svg {
   align-items: center;
   justify-content: center;
 }
-.total-amount {
+.total-quantity {
   color: var(--clr-white);
   margin-bottom: 0;
   font-size: 1.25rem;
@@ -245,19 +245,19 @@ Cart Item
 .remove-btn:hover {
   color: var(--clr-primary-light);
 }
-.amount-btn {
+.quantity-btn {
   width: 1.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
 }
-.amount-btn svg {
+.quantity-btn svg {
   fill: var(--clr-primary);
 }
-.amount-btn:hover svg {
+.quantity-btn:hover svg {
   fill: var(--clr-primary-light);
 }
-.amount {
+.quantity {
   text-align: center;
   margin-bottom: 0;
   font-size: 1.25rem;
