@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+## Testing
+
+Run the test suite once:
+
+```bash
+npm test
+```
+
+Use `npm run test:watch` during development, or `npm run test:coverage` to
+generate a coverage report.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
