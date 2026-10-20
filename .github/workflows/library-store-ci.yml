@@ -40,6 +40,7 @@
         with:
           node-version: 22
           cache: "npm"
+          cache-dependency-path: zustand/examples/library-store/package-lock.json
 
       - name: install dep
         run: npm ci
@@ -58,6 +59,7 @@
         with:
           node-version: 22
           cache: "npm"
+          cache-dependency-path: zustand/examples/library-store/package-lock.json
 
       - name: install dep
         run: npm ci
